@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Adrian Herath</title>
-  </head>
+    <head>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+            }
+        </style>
 
-  <h1>Adrian Herath</h1>
+        <link rel="icon" href="ok.png"></link>
+        <title>Adrian Herath</title>
+    </head>
 
-  
-  <body>
-      <canvas id="glcanvas" width=100% height=100%></canvas>
-  </body>
 
-  <script src="gl-matrix.js"></script>
-  <script src="webgl-demo.js"></script>
+    <div>
+        <body onload="init();" onresize="init.resize();">
+            <canvas id="glcanvas" width="800" height="600"><canvas>
+            <script src="app.js"></script>
+        </body>
+    </div>
+
+    <h1>Adrian Herath</h1>
+
+
 </html>
