@@ -1,27 +1,8 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-                position: absolute;
-            }
-        </style>
-
-        <link rel="icon" href="ok.png"></link>
-        <title>Adrian Herath</title>
-    </head>
-
-
-    <div>
-        <body onload="init();" onresize="init.resize();">
-            <canvas id="glcanvas" width="800" height="600"><canvas>
-            <script src="app.js"></script>
-        </body>
-    </div>
-
-    <h1>Adrian Herath</h1>
-
-
+  <head>
+    <script type="module">
+      import init from './pkg/webgl.js';
+      init();
+    </script>
+  </head>
 </html>
