@@ -1,6 +1,6 @@
 #!/bin/sh
 xbps-install -Syu
-xbps-install -Sy NetworkManager elogind alacritty alsa-utils firefox neovim nerd-fonts-otf dmenu curl git mesa zsh sway zsh-syntax-highlighting alsa python3
+xbps-install -Sy NetworkManager elogind alacritty alsa-utils firefox neovim nerd-fonts-otf dmenu curl git mesa-dri zsh sway zsh-syntax-highlighting alsa python3
 
 ln -s /etc/sv/NetworkManager /var/service
 ln -s /etc/sv/dbus /var/service
