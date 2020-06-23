@@ -1,0 +1,27 @@
+# Template file for 'nvimpager'
+pkgname=nvimpager
+version=0.6.73e0de4c
+revision=1
+#archs="i686 x86_64"
+ref=73e0de4c148749dc7c5779939a879deb216faedf
+wrksrc="${pkgname}-${ref}"
+#create_wrksrc=yes
+build_style=gnu-makefile
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends="neovim curl git pandoc"
+makedepends=""
+depends="neovim>=0.3.0 bash"
+short_desc="Use nvim as a pager to view manpages, diffs, etc with nvim's syntax highlighting"
+maintainer="Adrian Herath <adrianisuru@gmail.com>"
+license="BSD-2-Clause"
+homepage="https://github.com/lucc/nvimpager"
+distfiles="https://github.com/lucc/nvimpager/archive/73e0de4c148749dc7c5779939a879deb216faedf.zip"
+checksum=6aaa4f94f8a784aa3c86db1f6801c571be77423895e217cafd4b891d15cf8f87
+
+post_install() {
+	vlicense LICENSE
+}
